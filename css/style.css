@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+body{
+    background: #100E40;
+}
+
+/*Header Start Here...*/
+/*Navbar Start Here...*/
+header{
+    padding-top: 30px;
+}
+header nav{
+    position: relative;
+}
+
+header nav ul{
+    gap: 36px;
+}
+
+header nav ul li{
+    list-style: none;
+    position: relative;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-family: Abhaya Libre;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+header nav ul li::after{
+    content: "Coming soon";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    font-family: Urbanist;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #FF7262;
+    text-wrap: nowrap;
+}
+
+.nav__logo{
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .nav__logo::before{
+    content: "";
+    width: 580px;
+    height: 2px;
+    background: #E9ECF2;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+}
+
+header .nav__logo::after{
+    content: "";
+    width: 580px;
+    height: 2px;
+    background: #E9ECF2;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+}
+
+.nav_right__button{
+    padding: 14px 20px;
+    background: #FFC122;
+    font-family: Abhaya Libre;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+/*Navbar End Here...*/
+
+/*Banner Start Here...*/
+
+#banner{
+    padding-top: 101px;
+    background: url(../Images/bann_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner .banner_menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+#banner .banner_menu ul li{
+    list-style: none;
+}
+
+#banner .banner_menu ul li span{
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+#banner .banner_menu ul li:nth-child(1){
+    padding: 9px 33px;
+    border: 1px solid #FF86AB;
+    border-radius: 13px;
+    margin-right: 8px;
+    position: relative;
+}
+
+#banner .banner_menu ul li:nth-child(1) span{
+    padding: 3px 10px;
+    background: #FF86AB;
+    border-radius: 14px;
+    font-family: Urbanist;
+    font-size: 8.8px;
+    font-weight: 700;
+    line-height: 11px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: -10px;
+    right: 8px;
+}
+
+#banner .banner_menu ul li:nth-child(2){
+    padding: 6px 14px;
+    background: #D26FEB;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+}
+
+#banner .banner_menu ul li:nth-child(3){
+    padding: 6px 14px;
+    background: #EE4492;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+}
+
+#banner .banner_menu ul li:nth-child(4){
+    padding: 6px 14px;
+    background: #7A97FF;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+}
+
+#banner .banner_menu ul li:nth-child(5){
+    padding: 7px 40px 7px 32px;
+    border: 1px solid #0ACF83;
+    border-radius: 13px;
+    margin-left: 8px;
+    position: relative;
+}
+
+#banner .banner_menu ul li:nth-child(5) span{
+    padding: 3px 10px;
+    background: #0ACF83;
+    border-radius: 14px;
+    font-family: Urbanist;
+    font-size: 8.8px;
+    font-weight: 700;
+    line-height: 11px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: -10px;
+    right: 8px;
+}
+
+#banner .banner_text{
+    text-align: center;
+}
+
+#banner .banner_text h1{
+    width: 1080px;
+    font-family: Urbanist;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px auto 34px auto;
+}
+
+#banner .banner_text h1 span{
+    color: #FFC122;
+}
+
+#banner .banner_text p{
+    width: 540px;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+#banner .banner_text button{
+    padding: 12px 32px;
+    border: 3px solid #9245F5;
+    background: none;
+    border-radius: 10px;
+    margin-top: 45px;
+    font-family: Montserrat;
+    font-size: 21.62px;
+    font-weight: 700;
+    line-height: 33.63px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+#banner .banner_text button:hover{
+    background: #FFC122;
+    border: 3px solid transparent;
+    color: #080808;
+}
+
+#banner .banner_text button:nth-child(2){
+    background: #FFC122;
+    border: 3px solid transparent;
+    color: #080808;
+    margin-left: 28px;
+}
+
+#banner .banner_car{
+    margin-top: 229px;
+    margin-bottom: 98px;
+    position: relative;
+}
+
+#banner .banner_car img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#banner .banner_car .car_title h4:nth-child(1){
+    width: 185px;
+    font-family: Abhaya Libre;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.39px;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    top: -120px;
+    left: 225px;
+
+}
+
+#banner .banner_car .car_title h4:nth-child(2){
+    width: 98px;
+    font-family: Abhaya Libre;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.39px;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    top: -120px;
+    right: 210px;
+
+}
+
+#banner .banner_car .car_title h4:nth-child(3){
+    font-family: Abhaya Libre;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.39px;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    top: 75px;
+    left: -40px;
+
+}
+
+#banner .banner_car .car_title h4:nth-child(4){
+    font-family: Abhaya Libre;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.39px;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -140px;
+    left: 600px;
+
+}
+
+#banner .banner_car .car_title h4:nth-child(5){
+    width: 124px;
+    font-family: Abhaya Libre;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.39px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+
+}
+
+#banner .banner_car .round_1{
+    position: relative;
+    top: -134px;
+    left: 125px;
+}
+
+#banner .banner_car .round_2{
+    position: relative;
+    top: -50px;
+    left: 125px;
+}
+
+#banner .banner_car .round_3{
+    position: relative;
+    top: -60px;
+    left: 80px;
+}
+
+#banner .banner_car .round_4{
+    position: relative;
+    top: -50px;
+    left: 110px;
+}
+
+#banner .banner_car .round_8{
+    position: relative;
+    top: 50px;
+    left: -100px;
+}
+
+#banner .banner_car .round_9{
+    position: relative;
+    top: -10px;
+    left: 30px;
+}
+
+#banner .banner_car .round_10{
+    position: relative;
+    top: -100px;
+    left: -10px;
+}
+
+/*Banner End Here...*/
+/*Header End Here...*/
+
+/*--Utilities Part Start---*/
+
+#utilities {
+    padding-top: 29px;
+    background: url(../Images/NFTbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#utilities .title h4{
+    padding-left: 82px;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #FFFFFF;
+    position: relative;
+
+}
+
+#utilities .title h4::before{
+    content: "";
+    width: 67px;
+    height: 2px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+#utilities .title h2{
+    font-family: Abhaya Libre;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    color: #FFFFFF;
+}
+
+#utilities .multicast {
+    margin-top: 69px;
+}
+
+#utilities .item_text{
+    margin-top: 54px;
+    margin-left: 10px;
+}
+
+#utilities .item_text h3{
+    font-family: Abhaya Libre;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#utilities .item_text p{
+    width: 832px;
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #FFFFFF;
+}
+
+#utilities .driver{
+    margin-top: 65px;
+    text-align: right;
+    justify-content: end;
+}
+
+#utilities .driver_text{
+    margin-top: 47px;
+    margin-right: 13px;
+}
+
+#utilities .driver_text h3{
+    font-family: Abhaya Libre;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    color: #FFFFFF;
+}
+
+#utilities .driver_text p{
+    width: 832px;
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #FFFFFF;
+}
+
+#utilities .bot{
+    margin-top: 65px;
+}
+
+#utilities .nft{
+    margin-top: 65px;
+    text-align: right;
+    justify-content: end;
+}
+
+
+#utilities .nft_text{
+    margin-right: 13px;
+}
+
+#utilities .nft_text h3{
+    font-family: Abhaya Libre;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    color: #FFFFFF;
+}
+
+#utilities .nft_text p{
+    width: 832px;
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #FFFFFF;
+}
+
+#utilities .gmames{
+    margin-top: 65px;
+}
+
+
+/*--Utilities Part End---*/
+/*--Tokenomics part Start Here...*/
+#tokenomics{
+    margin-top: 267px;
+}
+
+#tokenomics .row{
+    align-items: center;
+}
+
+.tokenomics_ball {
+    width: 398px;
+    height: 398px;
+    border-radius: 50%;
+    background: linear-gradient(#abcaf8, #7A97FF, #ac45f5a1);
+    box-shadow: 30px 30px 50px 10px #ac45f5a1;
+    backdrop-filter: blur(243px);
+    position: absolute;
+    top: -230px;
+    left: -91px;
+    z-index: -2;
+}
+
+.tokenomics__card {
+    padding: 50px 36px 100px 40px;
+    background: linear-gradient(#ffffff25, #FFFFFF36);
+    backdrop-filter: blur(80px);
+    border-radius: 24px;
+}
+
+.tokenomics__title h4{
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #F8F9FF;
+    margin-left: 82px;
+    position: relative;
+}
+.tokenomics__title h4::before{
+    content: "";
+    width: 67px;
+    height: 2px;
+    background: #F8F9FF;
+    position: absolute;
+    bottom: 6px;
+    left: -82px;
+}
+
+.color__circle{
+    margin: 0 auto;
+    width: 492px;
+    height: 492px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 20% 20%, 30% 30%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#383753fe, #4f4c9a), 
+                      linear-gradient(20deg, red 50%, rgb(29, 104, 139) 20%),
+                      linear-gradient(120deg, #d520d8 56%, rgb(195, 207, 26) 30%),
+                      linear-gradient(300deg, blue 36%, rgb(118, 10, 137) 30%),
+                      linear-gradient(210deg, green 36%, rgb(143, 19, 19) 30%),
+                      linear-gradient(210deg, rgb(0, 58, 128) 36%, rgb(19, 96, 143) 30%),
+                      linear-gradient(210deg, rgb(49, 78, 49) 36%, rgb(215, 51, 185) 30%),
+                      linear-gradient(210deg, rgb(0, 79, 128) 36%, rgb(57, 181, 203) 30%);
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
+    position: relative;
+  }
+
+.tokenomics__title h3{
+    font-family: Abhaya Libre;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    color: #FFFFFF;
+    margin-top: 39px;
+
+}
+.circle__outline{
+    width: 339px;
+    height: 339px;
+    opacity: 0.15px;
+    border: 1.77px dashed #FFFFFF;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.tocenomics__left .circle{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 257px;
+    height: 257px;
+    border-radius: 50%;
+    background: linear-gradient(228.48deg, #19005fa1 16.84%, #49245b91 88.83%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tocenomics__left .circle h3{
+    font-family: Urbanist;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 44.83px;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+
+.tokenomics__right ul li{
+    width: 85%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    padding: 8px 18px;
+    background: linear-gradient(91.38deg, #180E85 0%, #472E96 100%);
+    border-left: 11px solid #AEE7FF;
+    border-radius: 8px;
+    opacity: 60%;
+    margin: 10px auto;
+    transition: .4s;
+}
+
+.tokenomics__right ul li:nth-child(2){
+    border-left: 11px solid #FFC122;
+    .span1{
+        color: #FFC122;
+    }
+}
+
+.tokenomics__right ul li:nth-child(3){
+    border-left: 11px solid #2864FF;
+    .span1{
+        color: #2864FF;
+    }
+}
+
+.tokenomics__right ul li:nth-child(4){
+    border-left: 11px solid #D26FEB;
+    .span1{
+        color: #D26FEB;
+    }
+}
+
+.tokenomics__right ul li:nth-child(5){
+    border-left: 11px solid #6998FF;
+    .span1{
+        color: #6998FF;
+    }
+}
+
+.tokenomics__right ul li:nth-child(6){
+    border-left: 11px solid #6EE3C0;
+    .span1{
+        color: #6EE3C0;
+    }
+}
+
+.tokenomics__right ul li:nth-child(7){
+    border-left: 11px solid #7C75FF;
+    .span1{
+        color: #7C75FF;
+    }
+}
+
+.tokenomics__right ul li:nth-child(8){
+    border-left: 11px solid #DF1DFF;
+    .span1{
+        color: #DF1DFF;
+    }
+}
+
+.tokenomics__right ul li:nth-child(9){
+    border-left: 11px solid #EE4492;
+    .span1{
+        color: #EE4492;
+    }
+}
+
+.tokenomics__right ul li:hover + li,li{
+    width: 95%;
+}
+
+
+.tokenomics__right ul li:hover {
+    width: 100%;
+}
+
+
+.tokenomics__right ul li h4{
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.15px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.tokenomics__right ul li p{
+    font-family: Urbanist;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.1px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.tokenomics__right ul li h5{
+    font-family: Urbanist;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25.15px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.tokenomics__right ul li h5 .span1{
+    font-size: 18px;
+    font-weight: 700;
+    color: #AEE7FF;
+    display: inline-block;
+}
+
+
+.tokenomics__right ul li h5 span{
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.15px;
+    text-align: right;
+    display: block;
+    color: #FFFFFF;
+
+}
+
+#tokenomics pre{
+    color: white;
+}
+
+
+
+
+
+/*--Tokenomics part End Here...*/
